@@ -1,0 +1,124 @@
+.Phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+}
+.PhoneField {
+  margin-right: 0rem;
+  height: 60px;
+  width: 90vw;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #5646c0;
+  padding: 0 1rem;
+  color: white;
+  font-size: 1.1rem;
+  z-index: 3;
+}
+.PhoneField:focus {
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  z-index: 3;
+}
+
+.PhoneField:active {
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  z-index: 3;
+}
+
+.PlaceHolder {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 50%;
+  transform-origin: 0 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.PhoneField:focus ~ .PlaceHolder {
+  position: absolute;
+  left: 20px;
+  top: 0%;
+  transform: translateY(0%) scale(0.7);
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.PhoneField:active ~ .PlaceHolder {
+  position: absolute;
+  left: 20px;
+  top: 0%;
+  transform: translateY(0%) scale(0.7);
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.PhoneField:checked ~ .PlaceHolder {
+  position: absolute;
+  left: 20px;
+  top: 0%;
+  transform: translateY(0%) scale(0.7);
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.Label {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.Label input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+.Label input:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #fff;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+}
+@media (min-width: 770px) {
+  .Phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .PhoneField {
+    margin-right: 2rem;
+    height: 60px;
+    width: 310px;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #5646c0;
+    padding: 0 1rem;
+    color: white;
+    font-size: 1.1rem;
+    z-index: 3;
+  }
+  .Label {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,121 @@
+.Content {
+  padding: 2rem 0rem;
+  padding-top: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+.Content h1 {
+  padding: 2rem 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.Content h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.Content p {
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.Labelwrapper {
+  display: flex;
+}
+.Labelwrapper label {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
+  font-size: 0.9rem;
+}
+
+.Labelwrapper input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  margin: 1rem 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  opacity: 1;
+  border: white 2px solid;
+  border-radius: 50%;
+}
+.Labelwrapper input:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+}
+
+.Landing button {
+  margin: 25px 0;
+  border: none;
+  background-color: #fff;
+  border-bottom: 7px solid #6b53ce;
+  color: #11111f;
+  border-radius: 40px;
+  font-size: 1rem;
+  min-width: 240px;
+  font-weight: 900;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  outline: none;
+  border-bottom-width: 0.5rem;
+  white-space: nowrap;
+  line-height: 1;
+}
+@media (min-width: 500px) {
+  .Content h1 {
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+}
+@media (min-width: 770px) {
+  .Content {
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .Content p {
+    padding-bottom: 1rem;
+  }
+  .Content h1 {
+    padding: 2rem 2rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+}
+@media (min-width: 990px) {
+  .Content {
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    width: 1100px;
+  }
+  .Content h1 {
+    padding: 2rem 0;
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-align: left;
+  }
+}

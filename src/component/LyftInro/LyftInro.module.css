@@ -1,0 +1,31 @@
+.LyftInro {
+  width: 100%;
+  margin: 0 auto;
+  color: rgb(53, 53, 53);
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+@media (min-width: 550px) {
+  .LyftInro {
+    width: 550px;
+    margin: 0 auto;
+    color: rgb(53, 53, 53);
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 770px) {
+  .LyftInro {
+    width: 770px;
+    margin: 0 auto;
+    color: rgb(53, 53, 53);
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 990px) {
+  .LyftInro {
+    width: 990px;
+    margin: 0 auto;
+    color: rgb(53, 53, 53);
+    font-size: 0.9rem;
+  }
+}

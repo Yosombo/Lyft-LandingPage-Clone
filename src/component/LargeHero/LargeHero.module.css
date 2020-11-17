@@ -1,0 +1,27 @@
+.LargeHero {
+  background: #785ef0;
+  color: white;
+}
+.Logo {
+  padding: 2rem 1rem;
+  padding-bottom: 0;
+}
+@media (min-width: 770px) {
+  .LargeHero {
+    background: #785ef0;
+    color: white;
+  }
+  .Logo {
+    padding: 2rem 1rem;
+  }
+}
+@media (min-width: 990px) {
+  .LargeHero {
+    background: #785ef0;
+    color: white;
+  }
+  .Logo {
+    padding: 2rem 5rem;
+    padding-bottom: 0;
+  }
+}

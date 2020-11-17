@@ -1,0 +1,73 @@
+.WhyLyft {
+  padding: 1rem;
+}
+.WhyLyft h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.ContentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.SvgWrapper {
+  width: 6rem;
+  padding: 1rem 0;
+}
+.Content {
+  position: relative;
+  padding: 1rem 0;
+}
+.Content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(221, 221, 221);
+}
+.Content h3 {
+  margin-bottom: 1rem;
+}
+.Content p {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 770px) {
+  .WhyLyft h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .ContentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Content {
+    position: relative;
+    width: 200px;
+    padding: 1rem 0;
+  }
+  .Content::after {
+    content: "";
+    display: none;
+    position: absolute;
+  }
+}
+@media (min-width: 990px) {
+  .WhyLyft h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .ContentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Content {
+    position: relative;
+    width: 290px;
+    padding: 1rem 0;
+  }
+}

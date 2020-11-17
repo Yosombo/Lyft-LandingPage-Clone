@@ -1,0 +1,302 @@
+.HowWorks {
+  height: fit-content;
+  position: relative;
+  margin: 3rem 0;
+  color: rgb(53, 53, 53);
+}
+.Left {
+  position: absolute;
+  display: none;
+  top: 25%;
+  transform: translateY(-50%);
+  left: 4rem;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-radius: 50%;
+}
+.Right {
+  position: absolute;
+  display: none;
+  top: 25%;
+  transform: translateY(-50%) rotate(180deg);
+  right: 4rem;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-radius: 50%;
+}
+.BackgroundImg {
+  width: 100%;
+  height: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.SliderWrapper {
+  position: absolute;
+  right: 50%;
+  width: 100%;
+  height: fit-content;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  top: 1rem;
+}
+.ToFlexDescription {
+  display: flex;
+  flex-direction: column;
+}
+.Title {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.Description h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.Description p {
+  height: 50px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.PhoneAligner {
+}
+.Phone {
+  position: relative;
+  width: 316px;
+  height: 360px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+}
+.phoneDisplayAligner {
+  position: absolute;
+  top: 40px;
+  left: 2px;
+  width: 316px;
+  height: 256px;
+}
+.phoneDisplay {
+  position: relative;
+  border: 2px rgb(117, 117, 117) solid;
+  border-radius: 1px;
+  width: 146px;
+  height: 256px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.ScreenShot {
+  width: 100%;
+  height: 255px;
+  transition: 0.5s ease-out;
+}
+
+.ScreenShot img {
+  width: 142px;
+  height: 256px;
+}
+.Dots {
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Dot {
+  height: 8px;
+  width: 8px;
+  border: 1px black solid;
+  border-radius: 50%;
+}
+@media (min-width: 550px) {
+  .Left {
+    position: absolute;
+    display: block;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 4rem;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 50%;
+  }
+  .Right {
+    position: absolute;
+    display: block;
+    top: 25%;
+    transform: translateY(-50%) rotate(180deg);
+    right: 4rem;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 50%;
+  }
+  .ToFlexDescription {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 770px) {
+  .HowWorks {
+    height: fit-content;
+    position: relative;
+    margin: 3rem 0;
+    margin-bottom: 0;
+    color: rgb(53, 53, 53);
+  }
+  .BackgroundImg {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Phone {
+    position: relative;
+    width: 350px;
+    height: 630px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+  }
+
+  .phoneDisplayAligner {
+    position: absolute;
+    top: 72px;
+    left: 2px;
+    width: 350px;
+    height: 630px;
+  }
+  .phoneDisplay {
+    position: relative;
+    border: 2px rgb(117, 117, 117) solid;
+    border-radius: 1px;
+    width: 250px;
+    height: 444px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .ScreenShot {
+    width: 100%;
+    height: 444px;
+    transition: 0.5s ease-in;
+  }
+
+  .ScreenShot img {
+    width: 250px;
+    height: 444px;
+  }
+  .ToFlexDescription {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+  .Title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 990px) {
+  .HowWorks {
+    height: fit-content;
+    position: relative;
+    margin: 3rem 0;
+    margin-bottom: 0;
+    color: rgb(53, 53, 53);
+  }
+  .BackgroundImg {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Phone {
+    position: relative;
+    width: 350px;
+    height: 630px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+  }
+
+  .phoneDisplayAligner {
+    position: absolute;
+    top: 72px;
+    left: 2px;
+    width: 350px;
+    height: 630px;
+  }
+  .phoneDisplay {
+    position: relative;
+    border: 2px rgb(117, 117, 117) solid;
+    border-radius: 1px;
+    width: 250px;
+    height: 444px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .ScreenShot {
+    width: 100%;
+    height: 444px;
+    transition: 0.5s ease-in;
+  }
+
+  .ScreenShot img {
+    width: 250px;
+    height: 444px;
+  }
+  .Left {
+    position: absolute;
+    display: block;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 20vw;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 50%;
+  }
+  .Right {
+    position: absolute;
+    display: block;
+    top: 25%;
+    transform: translateY(-50%) rotate(180deg);
+    right: 20vw;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 50%;
+  }
+
+  .ToFlexDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 15vw;
+    transform: translateY(-100%);
+  }
+  .Title {
+    width: 22vw;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .Description p {
+    width: 20vw;
+    height: 50px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+}

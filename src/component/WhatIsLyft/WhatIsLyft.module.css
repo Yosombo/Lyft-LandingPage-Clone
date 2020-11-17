@@ -1,0 +1,32 @@
+.WhatIsLyft {
+  padding: 2rem 1rem;
+}
+.WhatIsLyft h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.WhatIsLyft div {
+  margin-bottom: 1rem;
+}
+@media (min-width: 770px) {
+  .WhatIsLyft {
+    padding: 3rem 1rem;
+  }
+  .WhatIsLyft h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 990px) {
+  .WhatIsLyft {
+    width: 660px;
+    padding: 3rem 1rem;
+  }
+  .WhatIsLyft h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}

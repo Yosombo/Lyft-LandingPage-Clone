@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import css from "./App.module.css";
+import ClearGap from "./component/ClearGap/ClearGap";
+import HowWorks from "./component/HowWorks/HowWorks";
+import LargeHero from "./component/LargeHero/LargeHero";
+import LearnMore from "./component/LearnMore/LearnMore";
+import LyftInro from "./component/LyftInro/LyftInro";
+import MoreInfo from "./component/MoreInfo/MoreInfo";
+import RentalPromo from "./component/RentalPromo/RentalPromo";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={css.App}>
+    <LargeHero/>
+    <LearnMore/>
+    <RentalPromo/>
+    <LyftInro/>
+    <HowWorks/>
+    <ClearGap/>
+    <MoreInfo/>
     </div>
   );
 }

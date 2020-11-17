@@ -1,0 +1,131 @@
+.RentalPromo {
+  padding: 4rem 1.5rem;
+  color: rgb(53, 53, 53);
+  font-size: 0.8rem;
+  background: #f3f3f5;
+}
+
+.RentalPromo h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.RentalPromo h4 {
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+.ContentWrap {
+  margin: 3rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Content {
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.4px;
+}
+.Content div {
+  width: 75%;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+.Content img {
+  width: 4rem;
+  height: 4rem;
+}
+.Content h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+.Content p {
+  line-height: 1.1;
+}
+.Description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 550px) {
+  .Aligner {
+    width: 540px;
+    margin: 0 auto;
+  }
+  .RentalPromo h4 {
+    font-size: 1.8rem;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 600;
+  }
+  .Content div {
+    width: 50%;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+  }
+  .Content p {
+    line-height: 1.2;
+  }
+}
+@media (min-width: 770px) {
+  .Aligner {
+    width: 760px;
+    margin: 0 auto;
+  }
+  .Content div {
+    width: 40%;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+  }
+  .Content p {
+    line-height: 1.4;
+  }
+}
+@media (min-width: 990px) {
+  .Aligner {
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .RentalPromo h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .RentalPromo h4 {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 600;
+  }
+  .ContentWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .Content {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0;
+    margin-right: 1rem;
+  }
+  .Content:nth-child(3) {
+    margin-right: 0;
+  }
+  .Content h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .Content div {
+    width: 100%;
+    margin: 0;
+    font-size: 0.75rem;
+  }
+  .Description {
+    width: 65%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
