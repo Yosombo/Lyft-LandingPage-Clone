@@ -1,8 +1,6 @@
-.Phone {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0.5rem 0;
+.Wrapper {
+  position: relative;
+  width: fit-content;
 }
 .PhoneField {
   margin-right: 0rem;
@@ -35,6 +33,7 @@
 .PlaceHolder {
   position: absolute;
   pointer-events: none;
+  color: white;
   left: 20px;
   top: 50%;
   transform-origin: 0 100%;
@@ -46,7 +45,7 @@
   position: absolute;
   left: 20px;
   top: 0%;
-  transform: translateY(0%) scale(0.7);
+  transform: translateY(10%) scale(0.7);
   z-index: 1;
   transition: all 0.2s ease;
 }
@@ -55,7 +54,7 @@
   position: absolute;
   left: 20px;
   top: 0%;
-  transform: translateY(0%) scale(0.7);
+  transform: translateY(10%) scale(0.7);
   z-index: 1;
   transition: all 0.2s ease;
 }
@@ -63,45 +62,12 @@
   position: absolute;
   left: 20px;
   top: 0%;
-  transform: translateY(0%) scale(0.7);
+  transform: translateY(10%) scale(0.7);
   z-index: 1;
   transition: all 0.2s ease;
 }
-
-.Label {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-}
-.Label input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin-right: 0.5rem;
-  border-radius: 4px;
-  border: 2px solid white;
-  cursor: pointer;
-}
-.Label input:checked::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-  background-color: #fff;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-}
-
 @media (min-width: 550px) {
   .PhoneField {
-    margin-right: 0rem;
     height: 60px;
     width: 550px;
     border-radius: 0.5rem;
@@ -114,14 +80,7 @@
   }
 }
 @media (min-width: 770px) {
-  .Phone {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
   .PhoneField {
-    margin-right: 2rem;
     height: 60px;
     width: 310px;
     border-radius: 0.5rem;
@@ -131,10 +90,5 @@
     color: white;
     font-size: 1.1rem;
     z-index: 3;
-  }
-  .Label {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
   }
 }

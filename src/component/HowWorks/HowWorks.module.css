@@ -59,8 +59,7 @@
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
-.PhoneAligner {
-}
+
 .Phone {
   position: relative;
   width: 316px;
@@ -104,7 +103,6 @@
   width: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .Dot {
   height: 8px;

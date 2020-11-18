@@ -5,6 +5,7 @@ import LargeHero from "./component/LargeHero/LargeHero";
 import LearnMore from "./component/LearnMore/LearnMore";
 import LyftInro from "./component/LyftInro/LyftInro";
 import MoreInfo from "./component/MoreInfo/MoreInfo";
+import Questions from "./component/Questions/Questions";
 import RentalPromo from "./component/RentalPromo/RentalPromo";
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
     <HowWorks/>
     <ClearGap/>
     <MoreInfo/>
+    <Questions/>
+    <div className={css.Footer} >
+    <a href="/">Privacy</a>
+    </div>
     </div>
   );
 }

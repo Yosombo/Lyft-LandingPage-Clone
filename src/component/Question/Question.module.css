@@ -1,0 +1,80 @@
+.QuestionWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px rgb(214, 214, 214) solid;
+}
+.TextWrapper {
+  width: 90%;
+}
+
+.Question {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.Answer {
+  font-size: 0.9rem;
+}
+.QuestionWrapper button {
+  border: none;
+  background: none;
+  display: grid;
+  place-content: center;
+  width: 40px;
+  height: 40px;
+}
+.X {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  line-height: 0;
+  border-radius: 50%;
+  border: 1px black solid;
+  background: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (min-width: 550px) {
+  .TextWrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 770px) {
+  .QuestionWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px rgb(214, 214, 214) solid;
+  }
+  .TextWrapper {
+    width: 80%;
+  }
+  .Question {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 770px) {
+  .QuestionWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px rgb(214, 214, 214) solid;
+  }
+}

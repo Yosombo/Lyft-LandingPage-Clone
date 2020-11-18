@@ -1,4 +1,75 @@
 .MoreInfo {
-  background-color: #ddd;
-  height: 80vh;
+  background-color: #f3f3f5;
+  color: rgb(53, 53, 53);
+  padding: 5rem 2rem;
+  padding-bottom: 2rem;
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.Content img {
+  width: 128px;
+  height: 128px;
+}
+.TextWrap h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.TextWrap div {
+  font-size: 0.9rem;
+}
+@media (min-width: 550px) {
+  .MoreInfo {
+    background-color: #f3f3f5;
+    color: rgb(53, 53, 53);
+    padding: 5rem 4rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 770px) {
+  .MoreInfo {
+    background-color: #f3f3f5;
+    color: rgb(53, 53, 53);
+    padding: 7rem 2rem;
+    padding-bottom: 3rem;
+  }
+  .Content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 770px;
+  }
+  .TextWrap {
+    width: 400px;
+  }
+  .TextWrap h2 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    padding-top: 0;
+  }
+  .TextWrap p {
+  }
+}
+@media (min-width: 990px) {
+  .Content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 990px;
+  }
+  .TextWrap {
+    width: 600px;
+  }
 }

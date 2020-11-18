@@ -1,6 +1,23 @@
-import React from 'react'
+import React,{useState, useEffect, useRef} from 'react'
 import css from './LearnMore.module.css'
 function LearnMore() {
+    const [state, setState]=useState(true)
+    const ref1 = useRef()
+    const ref2 = useRef()
+    const toggleRef=()=>{
+        setState(!state)
+    }
+    useEffect(()=>{
+        if(state=== true){
+            ref1.current.style.display='block'
+            ref2.current.style.display='none'
+            
+        } else{
+            ref1.current.style.display='none'
+            ref2.current.style.display='block'
+        }
+    },[state])
+
     return (
         <div className={css.AlignerContainer}>
         <div className={css.LearnMore}>
@@ -12,7 +29,8 @@ function LearnMore() {
             <h5>
            Make $2,500 Guarenteed
             </h5>
-            <div className={css.Link}>Learn more &gt;</div>
+            <div ref={ref1} onClick={toggleRef} className={css.Link}>Learn more &gt;</div>
+            <p ref={ref2}>Give 170 rides in your first 30 days to make $2,500 guaranteed. Renters aren't eligible for referral bonuses.</p>
             </div>
             </div>
         </div>

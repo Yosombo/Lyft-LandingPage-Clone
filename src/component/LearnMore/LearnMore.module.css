@@ -3,11 +3,15 @@
 }
 .LearnMore {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   color: white;
   padding: 1rem 0;
   text-align: left;
+}
+.LearnMore p {
+  line-height: 1.1;
+  font-size: 0.9rem;
 }
 .textContainer {
   width: 70%;
@@ -16,9 +20,12 @@
 .LearnMore h5 {
   line-height: 1.1;
   font-size: 1.1rem;
+  margin-bottom: 5px;
 }
 .Link {
   font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
 }
 @media (min-width: 550px) {
   .LearnMore {
@@ -40,7 +47,7 @@
 }
 @media (min-width: 990px) {
   .LearnMore {
-    width: 990px;
+    width: 1100px;
     margin: 0 auto;
     padding: 2rem 0;
   }

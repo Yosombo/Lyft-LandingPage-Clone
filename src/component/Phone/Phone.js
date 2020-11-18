@@ -2,6 +2,7 @@ import React,{useRef, useState} from 'react'
 import css from './Phone.module.css'
 import CurrencyFormat from 'react-currency-format';
 
+
 function Phone() {
     const[state, setState]=useState('')
     const myRef2 = useRef();
@@ -21,7 +22,6 @@ function Phone() {
             <div style={{
                 position: "relative"}}>
             <CurrencyFormat onChange={modeChange} onFocus={transform} onBlur={state!=='' ? transform : transformReverse} className={css.PhoneField} format="(###) ###-####" mask=""/>
-            <span className={css.PhoneFieldBackG}></span>
             <div ref={myRef2} className={css.PlaceHolder}>Mobile phone number</div>
             </div>
         <label className={css.Label}>
