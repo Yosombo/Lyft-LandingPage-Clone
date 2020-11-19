@@ -18,9 +18,6 @@ function HowWorks() {
     const[y, SetY]=useState(0)
     const dotRef = useRef()
     const autoPlayRef = useRef()
-    const moveDot =()=>{
-        dotRef.current.children[y].style.background="#000"
-    }
     const goLeft=()=>{
      if(x === 0){ 
          SetX(-100*(sliderArr.length-1))
@@ -39,7 +36,6 @@ function HowWorks() {
             SetX(x-100)
             SetY(y+1)
         }
-        moveDot()
     }
  const interval=(e)=>{
     setInterval(e, 3000)
@@ -51,6 +47,7 @@ function HowWorks() {
     })
     
     useEffect(()=>{
+
         const play =()=>{
             autoPlayRef.current()
         }

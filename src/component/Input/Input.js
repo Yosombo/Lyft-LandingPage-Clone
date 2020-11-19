@@ -1,7 +1,5 @@
 import React,{useRef, useState} from 'react'
 import css from './Input.module.css'
-import CurrencyFormat from 'react-currency-format';
-
 function Input(props) {
     const[state, setState]=useState('')
     const myRef2 = useRef();

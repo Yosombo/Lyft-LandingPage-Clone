@@ -1,4 +1,5 @@
 import React,{useState, useEffect, useRef} from 'react'
+import {Link} from 'react-router-dom'
 import Input from '../Input/Input'
 import Phone from '../Phone/Phone'
 import css from './Landing.module.css'
@@ -32,7 +33,7 @@ function Landing() {
         <div className={css.Landing}>
 
                 <div className={css.Content}>
-                <h1 >Make $2,500 guaranteed in San Francisco</h1>
+                <h1 >Make $2,500 guaranteed in San Francisco!</h1>
                 <h4>Sign up to drive</h4>
                 <div ref={contentRef}>
                 <p>Let's start with your phone number - we'll text you a code to verify your phone.</p>
@@ -52,10 +53,10 @@ function Landing() {
                     <Input type='city' value="City You'll drive"/>
                     <Input type='text' value='Promo/Refferal Code'/>
                     </div>
-                    <button onClick={changeState}>{txt}</button>
+                    <Link to="/showcase"><button>{txt}</button></Link>
                 </div>
                 <p>Already applied or already a driver?<br/>
-                <span style={{textDecoration: 'underline', cursor: 'pointer'}}>Log in</span></p>
+                <Link to="/login"><span style={{textDecoration: 'underline', cursor: 'pointer', color: 'white'}}>Log in</span></Link> </p>
         
             </div>
         </div>
